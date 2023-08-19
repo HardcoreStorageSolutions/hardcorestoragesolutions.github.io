@@ -41,14 +41,6 @@ h1 {
 }
 
 
-  .navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -102,19 +94,6 @@ margin-right: 10px;
 margin-left: 10px;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
 
 /* Customize container */
 @media (min-width: 768px) {
@@ -127,8 +106,10 @@ margin-left: 10px;
 }
 
 
-/* CUSTOMIZE THE NAVBAR
+/* /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+
+
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -152,7 +133,7 @@ margin-left: 10px;
   width: auto;
 }
 
-
+/* background colors and font styling */
 .green {
   background-color:#4B5320;
 }
