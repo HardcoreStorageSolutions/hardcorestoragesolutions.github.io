@@ -15,22 +15,53 @@
     <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS stylesheet-->
     <link href="/assets/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   </head>
 
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-fixed-top green">
-      <div class="container">
-          <a class="navbar-brand" href="/pages/about.html">About</a>
-          <a class="btn btn-primary" href="https://shop.hardcorestorage.com/">Pre-Order CanMod</a>
-          <a class="navbar-brand" href="https://shop.hardcorestorage.com/pages/contact">Contact</a>
-
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top green">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            class="btn btn-primary navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+            href="https://shop.hardcorestorage.com/"
+            >Pre-Order CanMod</a
+          >
         </div>
-      </div>
-       </nav>
-      </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="/index.html">Home</a></li>
+            <li><a class="navbar-brand" href="/pages/about.html">About</a></li>
+            <li>
+              <a
+                class="navbar-brand"
+                href="https://shop.hardcorestorage.com/pages/contact"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a class="navbar-brand" href="https://shop.hardcorestorage.com"
+                >Pre-Order CanMod</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
