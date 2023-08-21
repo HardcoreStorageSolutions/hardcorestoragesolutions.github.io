@@ -20,16 +20,8 @@ function homeLink(){
     hButton.className="navbar-toggle";
     hButton.setAttribute("data-toggle","collapse");
     hButton.setAttribute("data-target","#myNavbar");
-
-    let orderButton = document.createElement('button');
-    orderButton.className="navbar-toggle btn btn-primary";
-    orderButton.setAttribute("data-toggle","collapse");
-    orderButton.setAttribute("data-target","#myNavbar");
-    orderButton.innerHTML="hello";
     
     navbarContainer.append(hButton);
-    navbarContainer.append(orderButton);
-
 
     let hamburger=document.createElement("img");
     hamburger.setAttribute("width","25px");
@@ -40,3 +32,22 @@ function homeLink(){
 
 homeLink();
 
+
+function shopLink(){
+    let orderButton = document.createElement('button');
+    orderButton.className="navbar-toggle btn btn-primary";
+    orderButton.id="shopButton";
+    orderButton.setAttribute("data-toggle","collapse");
+    orderButton.setAttribute("data-target","#myNavbar");
+    orderButton.innerHTML="Order CanMod";
+    navbarContainer.append(orderButton);
+    console.log(location);
+}
+
+shopLink();
+
+function shopLinkClick(){
+window.location.replace("https://shop.hardcorestorage.com/");}
+
+let shopButton= document.getElementById("shopButton");
+shopButton.addEventListener("click", shopLinkClick); 
