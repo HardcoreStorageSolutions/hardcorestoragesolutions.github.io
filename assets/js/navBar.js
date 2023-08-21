@@ -19,14 +19,13 @@ function homeLink(){
     button.setAttribute("data-toggle","collapse");
     button.setAttribute("data-target","#myNavbar");
     
-    let span=document.createElement('span');
-    span.setAttribute("class","icon-bar");
     navbarContainer.append(button);
-    // button.append(span);
 
-
-    for (let i=0; i < 3; i++){button.append(span);}
-    
+    let hamburger=document.createElement("img");
+    hamburger.setAttribute("width","25px");
+    hamburger.src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png";
+    button.append(hamburger)
+   
 
 
     console.log(button.innerHTML);
