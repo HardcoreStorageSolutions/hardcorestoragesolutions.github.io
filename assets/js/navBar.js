@@ -22,9 +22,9 @@ function homeLink(){
     let span=document.createElement('span');
     span.setAttribute("class","icon-bar");
     navbarContainer.append(button);
-    // for (let i=0; i < 3; i++){button.append(span);}
-    button.append(span, "another thing");
-    button.append(span);
+    for (let i=0; i < 3; i++){button.append(span);}
+    
+
 
     console.log(button.innerHTML);
       
