@@ -5,6 +5,8 @@ console.log("Hello world!");
 
 
 let navbarContainer = document.getElementById("navBarContainer");
+let myNavbarID = document.getElementById("myNavbarID");
+myNavbarID.className=("navbar, navbar-inverse, navbar-fixed-top, green");
 
 function homeLink(){
     let link = document.createElement('a');
@@ -14,23 +16,26 @@ function homeLink(){
     navbarContainer.className="container";
     navbarContainer.append(link);
 
-    let button= document.createElement('button');
-    button.className="navbar-toggle";
-    button.setAttribute("data-toggle","collapse");
-    button.setAttribute("data-target","#myNavbar");
+    let hButton= document.createElement('button');
+    hButton.className="navbar-toggle";
+    hButton.setAttribute("data-toggle","collapse");
+    hButton.setAttribute("data-target","#myNavbar");
+
+    let orderButton = document.createElement('button');
+    orderButton.className="navbar-toggle btn btn-primary";
+    orderButton.setAttribute("data-toggle","collapse");
+    orderButton.setAttribute("data-target","#myNavbar");
+    orderButton.innerHTML="hello";
     
-    navbarContainer.append(button);
+    navbarContainer.append(hButton);
+    navbarContainer.append(orderButton);
+
 
     let hamburger=document.createElement("img");
     hamburger.setAttribute("width","25px");
     hamburger.src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png";
-    button.append(hamburger)
-   
-
-
-    console.log(button.innerHTML);
-      
-    
+    hButton.append(hamburger);
+        
 }
 
 homeLink();
