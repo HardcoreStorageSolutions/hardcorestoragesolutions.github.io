@@ -4,7 +4,7 @@ let navbar = document.getElementById("myNavbarID");
 myNavbarID.className=("green");
 
 
-let innerNav=document.getElementById("navBarContainer");
+let innerNav=document.getElementById("linksContainer");
 innerNav.className="collapse navbar-collapse";
 
 let waffle=document.createElement('button');
