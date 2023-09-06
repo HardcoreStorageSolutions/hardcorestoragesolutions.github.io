@@ -23,8 +23,7 @@ for (let i=0; i < navLinks.length; i++){
     let navLinkText=document.createTextNode(navLinks[i]);
     navLink.appendChild(navLinkText);
     navLink.href=navLinksHttp[i];
-    navLink.className="btn btn-primary";
+    navLink.className="btn";
     innerNav.append(navLink);
-    console.log(navLinks[i]);
 }
 
