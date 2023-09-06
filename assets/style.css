@@ -12,6 +12,9 @@ body {
 h1 {
   font-family: impact;
 }
+h3 {
+  font-family: impact;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -173,5 +176,16 @@ margin-left: 10px;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+}
+
+
+
+/* carousel special styling */
+
+.carousel-caption {
+  position:static;
+  background-color:white;
+  color:#424756;
+  font-family: Arial, sans-serif;
 }
 
